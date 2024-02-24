@@ -14,5 +14,9 @@ public interface FruitDao {
     List<Fruit> findByPrice(double price);
     List<Fruit> findByFruitType(FruitType fruitType);
 
+    List<Fruit> getByPriceDesc();
+    List<Fruit> getByPriceAsc();
+    List<Fruit> searchByName(String name);
+
 
 }
