@@ -14,4 +14,8 @@ public interface VegetableDao {
     Vegetable remove(long id);
     List<Vegetable> findByPrice(double price);
     List<Vegetable> findByGrownOnTree(boolean grownOnTree);
+    List<Vegetable> getByPriceDesc();
+    List<Vegetable> getByPriceAsc();
+    List<Vegetable> searchByName(String name);
+
 }
